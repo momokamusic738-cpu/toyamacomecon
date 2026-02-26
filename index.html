@@ -3,25 +3,235 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>とやまカムバックコンサート | 公式ホームページ</title>
+<title>とやまカムバックコンサート</title>
+
+<!-- Source Han Serif JP -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
-    background: #fafafa;
-    color: #333;
-    line-height: 1.8;
+
+body{
+    margin:0;
+    font-family:'Noto Serif JP', serif;
+    background:white;
+    color:#93CCEB;
+    line-height:1.9;
 }
 
-header {
-    background: #1d3557;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+/* 水彩×立山イメージ背景 */
+.hero{
+    position:relative;
+    padding:120px 20px;
+    text-align:center;
+    overflow:hidden;
+    background:
+        linear-gradient(to bottom,#eaf8ff 0%,#ffffff 70%),
+        radial-gradient(circle at 20% 30%, rgba(147,204,235,0.5), transparent 60%),
+        radial-gradient(circle at 80% 20%, rgba(147,204,235,0.3), transparent 60%);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-    letter-spacing: 2px;
+.hero::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:200px;
+    background:linear-gradient(to top,rgba(147,204,235,0.4),transparent);
+    clip-path:polygon(0 70%,20% 60%,40% 75%,60% 55%,80% 70%,100% 60%,100% 100%,0 100%);
+}
+
+.hero h1{
+    font-size:40px;
+    letter-spacing:4px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-top:20px;
+}
+
+nav{
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#93CCEB;
+    font-weight:600;
+}
+
+section{
+    padding:90px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#FDEA6C;
+    display:block;
+    margin:15px auto 0;
+}
+
+.highlight{
+    background:#FDEA6C;
+    padding:6px 14px;
+    display:inline-block;
+}
+
+.member{
+    margin-bottom:50px;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #93CCEB;
+    font-family:'Noto Serif JP', serif;
+}
+
+button{
+    background:#FDEA6C;
+    border:none;
+    padding:12px 25px;
+    font-family:'Noto Serif JP', serif;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+    .hero h1{font-size:28px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>とやまカムバックコンサート</h1>
+    <p>空と立山の記憶を、音楽にのせて。</p>
+</div>
+
+<nav>
+    <a href="#concert">次回演奏会</a>
+    <a href="#archive">動画</a>
+    <a href="#contact">お問い合わせ</a>
+</nav>
+
+<section id="concert">
+<h2>次回演奏会</h2>
+
+<p class="highlight">~とやまカムバックコンサートが贈る~</p>
+
+<h3>卒業記念演奏会</h3>
+
+<p>
+<strong>2026.3.7.SAT</strong><br>
+13:30開演 (13:00開場)<br>
+北日本新聞ホール<br>
+全席自由・入場料無料<br>
+主催：とやまカムバックコンサート事務局
+</p>
+
+<h3>出演者</h3>
+
+<div class="member">
+<strong>佐伯昌恭（バリトン）</strong><br>
+富山県立呉羽高等学校、愛知県立芸術大学を経て同大学大学院博士前期課程2年次在学中。<br>
+第55回愛知県立芸術大学卒業演奏会出演。<br>
+日本クラシック音楽コンクール第3位ほか多数受賞。<br>
+令和7年度（公財）北野生涯教育振興会奨学生。<br>
+黒崎隆憲、森寿美に師事。
+</div>
+
+<div class="member">
+<strong>小谷桃佳（ソプラノ）</strong><br>
+富山県立呉羽高等学校音楽コース、東京学芸大学卒業。<br>
+東京音楽大学大学院修士課程2年次在学中。<br>
+Mahler project等でソリスト出演。<br>
+横内桂子、小林大作ほか各氏に師事。<br>
+とやまカムバックコンサート代表。
+</div>
+
+<div class="member">
+<strong>金場葉菜（サクソフォン）</strong><br>
+富山県高岡市出身。<br>
+富山県青少年音楽大賞受賞。<br>
+オーケストラアンサンブル金沢と共演。<br>
+昭和音楽大学4年次特待生在学中。
+</div>
+
+<div class="member">
+<strong>関口実咲（ソプラノ）</strong><br>
+魚津市出身。愛知県立芸術大学4年次在学中。
+</div>
+
+<p>ほか</p>
+
+<h3>第5回とやまカムバックコンサート</h3>
+<p>
+2026年12月28日<br>
+富山県教育文化会館<br>
+開演時間未定
+</p>
+
+</section>
+
+<section id="archive">
+<h2>過去の動画アーカイブ</h2>
+
+<iframe src="https://www.youtube.com/embed/SNiQf7IWmoE"></iframe>
+
+</section>
+
+<section id="contact">
+<h2>お問い合わせ</h2>
+
+<form action="mailto:toyamacomecon@gmail.com" method="post" enctype="text/plain">
+<label>氏名</label>
+<input type="text" name="氏名" required>
+
+<label>メールアドレス</label>
+<input type="email" name="メールアドレス" required>
+
+<label>件名</label>
+<input type="text" name="件名" required>
+
+<label>内容</label>
+<textarea name="内容" rows="5" required></textarea>
+
+<button type="submit">送信する</button>
+</form>
+
+</section>
+
+<footer>
+© 2026 とやまカムバックコンサート
+</footer>
+
+</body>
+</html>
