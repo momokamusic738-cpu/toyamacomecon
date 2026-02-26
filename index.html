@@ -5,16 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>とやまカムバックコンサート</title>
 
-<!-- Source Han Serif JP -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+
+/* ===== 全体 ===== */
+body{
+    margin:0;
+    font-family:'Shippori Mincho', serif;
+    color:#93CCEB;
+    background:#ffffff;
+}
+
+/* ===== テキスト装飾 ===== */
 .blue-line{
     text-align:center;
     font-size:18px;
     margin-bottom:20px;
     letter-spacing:2px;
 }
+
+/* ===== 横スクロール ===== */
 .scroll-gallery{
     display:flex;
     overflow-x:auto;
@@ -22,7 +33,6 @@
     padding:30px 10px;
     scroll-snap-type:x mandatory;
 }
-
 .scroll-gallery img{
     height:420px;
     border-radius:6px;
@@ -30,77 +40,50 @@
     scroll-snap-align:center;
     transition:transform 0.4s ease;
 }
-
 .scroll-gallery img:hover{
     transform:scale(1.03);
 }
 
-/* スクロールバーを少し美しく */
-.scroll-gallery::-webkit-scrollbar{
-    height:8px;
-}
-.scroll-gallery::-webkit-scrollbar-thumb{
-    background:#93CCEB;
-    border-radius:10px;
-}
+/* ===== 詳細 ===== */
 .concert-detail{
     color:#22669F;
     font-size:18px;
     line-height:2;
     margin-top:20px;
 }
-    .performers{
+
+/* ===== 出演者 ===== */
+.performers{
     color:#22669F;
-    font-size:17px;   /* 詳細より1ポイント小さく */
-    line-height:1.9;
-    margin-top:30px;
-}
-.
-
-body{
-    margin:0;
-    font-family: 'Shippori Mincho', serif;
-    color:#93CCEB;
+    font-size:17px;
+    line-height:2;
+    margin-top:40px;
 }
 
-/* 水彩×立山イメージ背景 */
+/* ===== ヒーロー ===== */
 .hero{
     position:relative;
     padding:120px 20px;
     text-align:center;
-    overflow:hidden;
     background:
         linear-gradient(to bottom,#eaf8ff 0%,#ffffff 70%),
         radial-gradient(circle at 20% 30%, rgba(147,204,235,0.5), transparent 60%),
         radial-gradient(circle at 80% 20%, rgba(147,204,235,0.3), transparent 60%);
 }
-
-.hero::after{
-    content:"";
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:200px;
-    background:linear-gradient(to top,rgba(147,204,235,0.4),transparent);
-    clip-path:polygon(0 70%,20% 60%,40% 75%,60% 55%,80% 70%,100% 60%,100% 100%,0 100%);
-}
-
 .hero h1{
     font-size:40px;
     letter-spacing:4px;
 }
-
 .hero p{
     font-size:18px;
     margin-top:20px;
 }
 
+/* ===== ナビ ===== */
 nav{
     text-align:center;
     padding:15px;
 }
-
 nav a{
     margin:0 15px;
     text-decoration:none;
@@ -108,18 +91,17 @@ nav a{
     font-weight:600;
 }
 
+/* ===== セクション ===== */
 section{
     padding:90px 20px;
     max-width:1000px;
     margin:auto;
 }
-
 h2{
     text-align:center;
     margin-bottom:50px;
     position:relative;
 }
-
 h2::after{
     content:"";
     width:70px;
@@ -128,39 +110,28 @@ h2::after{
     display:block;
     margin:15px auto 0;
 }
-
-.highlight{
-    background:#FDEA6C;
-    padding:6px 14px;
-    display:inline-block;
+h3{
+    font-size:22px;
+    margin-top:50px;
 }
 
-.member{
-    margin-bottom:50px;
-}
-
-iframe{
-    width:100%;
-    height:400px;
-    border:none;
-}
-
+/* ===== フォーム ===== */
 input,textarea{
     width:100%;
     padding:10px;
     margin-bottom:15px;
     border:1px solid #93CCEB;
-    font-family:'Noto Serif JP', serif;
+    font-family:'Shippori Mincho', serif;
 }
-
 button{
     background:#FDEA6C;
     border:none;
     padding:12px 25px;
-    font-family:'Noto Serif JP', serif;
+    font-family:'Shippori Mincho', serif;
     cursor:pointer;
 }
 
+/* ===== フッター ===== */
 footer{
     text-align:center;
     padding:50px 20px;
@@ -169,6 +140,7 @@ footer{
 
 @media(max-width:600px){
     .hero h1{font-size:28px;}
+    .scroll-gallery img{height:300px;}
 }
 
 </style>
@@ -178,7 +150,7 @@ footer{
 
 <div class="hero">
     <h1>とやまカムバックコンサート</h1>
-    <p>富山県出身音大系大学生・大学生によるコンサート</p>
+    <p>富山県出身音大系大学生によるコンサート</p>
 </div>
 
 <nav>
@@ -193,12 +165,12 @@ footer{
 <p class="blue-line">~とやまカムバックコンサートが贈る~</p>
 
 <h3>卒業記念演奏会</h3>
+
 <div class="scroll-gallery">
     <img src="images/カムコン卒業記念演奏会 - 1.jpeg" alt="卒業記念演奏会チラシ1">
     <img src="images/カムコン卒業記念演奏会 - 5.jpeg" alt="卒業記念演奏会チラシ2">
-</div> 
+</div>
 
-<p>
 <p class="concert-detail">
 <strong>2026.3.7.SAT</strong><br>
 13:30開演 (13:00開場)<br>
@@ -208,53 +180,32 @@ footer{
 </p>
 
 <h3>出演者</h3>
+
 <div class="performers">
-<strong>佐伯昌恭（バリトン）</strong><br>
-富山県立呉羽高等学校、愛知県立芸術大学を経て同大学大学院博士前期課程2年次在学中。<br>
-第55回愛知県立芸術大学卒業演奏会出演。<br>
-日本クラシック音楽コンクール第3位ほか多数受賞。<br>
-令和7年度（公財）北野生涯教育振興会奨学生。<br>
-黒崎隆憲、森寿美に師事。
+<strong>佐伯昌恭(バリトン)</strong><br>
+富山県立呉羽高等学校、愛知県立芸術大学を経て、同大学大学院博士前期課程2年次在学中。学内選抜により、第55回愛知県立芸術大学卒業演奏会に出演。第29回 日本クラシック音楽コンクール 声楽部門高校男子の部 第3位。第2回国際声楽コンクール東京 入選。第78回全日本学生音楽コンクール 名古屋大会第2位。全国大会 入選。令和7年度 (公財)北野生涯教育振興会奨学生。これまでに声楽を黒崎隆憲、森寿美に師事。
 </div>
 
-<div class="member">
-<strong>小谷桃佳（ソプラノ）</strong><br>
-富山県立呉羽高等学校音楽コース、東京学芸大学卒業。<br>
-東京音楽大学大学院修士課程2年次在学中。<br>
-Mahler project等でソリスト出演。<br>
-横内桂子、小林大作ほか各氏に師事。<br>
-とやまカムバックコンサート代表。
+<div class="performers">
+<strong>小谷桃佳(ソプラノ)</strong><br>
+富山県立呉羽高等学校普通科音楽コース、東京学芸大学教育学部中等教育教員養成課程音楽専攻卒業。現在、東京音楽大学大学院修士課程声楽専攻2年次在学中。学芸大在学中に幼小中高の教育免許を取得。学芸×第九特別演奏会、Mahler project マーラー/交響曲第4番でソリストを務める。これまで声楽を横内桂子、小林大作、森朱美、釜洞祐子、武田正雄、九嶋香奈枝の各氏に師事。とやまカムバックコンサート代表。
 </div>
 
-<div class="member">
-<strong>金場葉菜（サクソフォン）</strong><br>
-富山県高岡市出身。<br>
-富山県青少年音楽大賞受賞。<br>
-オーケストラアンサンブル金沢と共演。<br>
-昭和音楽大学4年次特待生在学中。
+<div class="performers">
+<strong>金場葉菜(サクソフォン)</strong><br>
+富山県高岡市出身。第38回富山県青少年音楽コンクール最優秀賞・青少年音楽大賞受賞。第4回Kグランプリコンクール優秀賞。第23回北陸新人登竜門コンサートにてオーケストラアンサンブル金沢とGlazunovの協奏曲を共演。これまでにサクソフォンを谷道実子、松井宏幸、田中靖人、有村純親、住谷美帆、小山弦太郎の各氏に師事。現在、昭和音楽大学弦・管・打楽器演奏家コース4年次に特待生として在学中。
 </div>
 
-<div class="member">
-<strong>関口実咲（ソプラノ）</strong><br>
-魚津市出身。愛知県立芸術大学4年次在学中。
+<div class="performers">
+<strong>関口実咲(ソプラノ)</strong><br>
+魚津市出身。2002年生まれ。2021年3月に富山県立魚津高等学校卒業後声楽を始め、今まで串田淑子・福島明也・五月女智恵の各氏に師事。現在愛知県立芸術大学音楽学部声楽専攻4年次在学中。
 </div>
-
-<p>ほか</p>
-
-<h3>第5回とやまカムバックコンサート</h3>
-<p>
-2026年12月28日<br>
-富山県教育文化会館<br>
-開演時間未定
-</p>
 
 </section>
 
 <section id="archive">
 <h2>過去の動画アーカイブ</h2>
-
 <iframe src="https://www.youtube.com/embed/SNiQf7IWmoE"></iframe>
-
 </section>
 
 <section id="contact">
