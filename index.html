@@ -15,6 +15,44 @@
     border-radius:20px;
     margin-top:40px;
 }
+    /* ===== SNSリンクボックス ===== */
+.sns-box{
+    margin-top:60px;
+    background:#ffffff;
+    border:2px solid #FDEA6C;     /* 黄色アクセント */
+    border-radius:20px;
+    padding:40px 25px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,0.05);
+}
+
+.sns-box h3{
+    margin-bottom:30px;
+    color:#22669F;
+}
+
+.sns-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.sns-links a{
+    text-decoration:none;
+    color:#22669F;
+    border:1px solid #93CCEB;
+    padding:10px 20px;
+    border-radius:25px;
+    font-weight:600;
+    transition:0.3s ease;
+    background:#ffffff;
+}
+
+.sns-links a:hover{
+    background:#FDEA6C;
+    color:#000;
+}
 
 /* ===== 全体 ===== */
 body{
@@ -266,7 +304,22 @@ footer{
 
 <button type="submit">送信する</button>
 </form>
+<div class="sns-box">
+    <h3>SNS・掲載情報</h3>
+    <div class="sns-links">
+        <a href="https://www.instagram.com/toyama_comecon?igsh=dXdiNTZma2d1amY=" target="_blank">
+            Instagram
+        </a>
 
+        <a href="https://x.com/toyama_comecon?s=21" target="_blank">
+            X（旧Twitter）
+        </a>
+
+        <a href="https://www.concertsquare.jp/musician/a49ab0a2b2594edea20e977b581f753e" target="_blank">
+            コンサートスクウェア
+        </a>
+    </div>
+</div>
 </section>
 
 <footer>
