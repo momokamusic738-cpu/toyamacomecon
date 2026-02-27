@@ -104,21 +104,29 @@ body{
 
 /* ===== ナビ ===== */
 nav{
-    text-align:center;
-    padding:20px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding:20px 10px;
+    flex-wrap:nowrap;   /* ← 折り返さない */
 }
+
 nav a{
-    margin:0 15px;
     text-decoration:none;
     color:#93CCEB;
     font-weight:600;
-    padding:8px 18px;
+    padding:8px 16px;
     border:1px solid rgba(147,204,235,0.4);
     border-radius:20px;
+    white-space:nowrap;  /* ← 文字の改行を防ぐ */
+    font-size:14px;      /* ← スマホで少し小さく */
     transition:0.3s ease;
 }
+
 nav a:hover{
     background:rgba(147,204,235,0.15);
+}
 }
 
 /* ===== セクション ===== */
