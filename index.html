@@ -102,31 +102,34 @@ body{
     );
 }
 
-/* ===== ナビ ===== */
+/* ===== ナビ（スマホ完全対応版） ===== */
 nav{
     display:flex;
-    justify-content:center;
-    align-items:center;
     gap:15px;
-    padding:20px 10px;
-    flex-wrap:nowrap;   /* ← 折り返さない */
+    padding:20px 15px;
+    overflow-x:auto;          /* ← 横スクロール許可 */
+    -webkit-overflow-scrolling:touch;
+}
+
+nav::-webkit-scrollbar{
+    display:none;             /* スクロールバー非表示 */
 }
 
 nav a{
+    flex:0 0 auto;            /* ← 縮ませない */
     text-decoration:none;
     color:#93CCEB;
     font-weight:600;
-    padding:8px 16px;
+    padding:10px 18px;
     border:1px solid rgba(147,204,235,0.4);
-    border-radius:20px;
-    white-space:nowrap;  /* ← 文字の改行を防ぐ */
-    font-size:14px;      /* ← スマホで少し小さく */
+    border-radius:25px;
+    white-space:nowrap;       /* 文字改行防止 */
+    font-size:14px;
     transition:0.3s ease;
 }
 
 nav a:hover{
     background:rgba(147,204,235,0.15);
-}
 }
 
 /* ===== セクション ===== */
